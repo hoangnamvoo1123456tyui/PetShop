@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+    <title>Hoàng Nam- Free eCommerce Pet Shop HTML Website Template</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRgkpXsbIojtOskQBM7C9qgF5hcUBgQ1hP5F5X8VP" crossorigin="anonymous">
+    <link rel="stylesheet" href="./giohang.css">
+    </head>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <defs>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="link" viewBox="0 0 24 24">
+            <path fill="currentColor"
+            d="M12 19a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0-4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm-5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm7-12h-1V2a1 1 0 0 0-2 0v1H8V2a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 17a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9h16Zm0-11H4V6a1 1 0 0 1 1-1h1v1a1 1 0 0 0 2 0V5h8v1a1 1 0 0 0 2 0V5h1a1 1 0 0 1 1 1ZM7 15a1 1 0 1 0-1-1a1 1 0 0 0 1 1Zm0 4a1 1 0 1 0-1-1a1 1 0 0 0 1 1Z" />
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-right" viewBox="0 0 24 24">
+            <path fill="currentColor"
+            d="M17.92 11.62a1 1 0 0 0-.21-.33l-5-5a1 1 0 0 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l5-5a1 1 0 0 0 .21-.33a1 1 0 0 0 0-.76Z" />
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="category" viewBox="0 0 24 24">
+            <path fill="currentColor"
+            d="M19 5.5h-6.28l-.32-1a3 3 0 0 0-2.84-2H5a3 3 0 0 0-3 3v13a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-10a3 3 0 0 0-3-3Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-13a1 1 0 0 1 1-1h4.56a1 1 0 0 1 .95.68l.54 1.64a1 1 0 0 0 .95.68h7a1 1 0 0 1 1 1Z" />
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="calendar" viewBox="0 0 24 24">
+            <path fill="currentColor"
+            d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16Zm0-9H4V7a1 1 0 0 1 1-1h2v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h2a1 1 0 0 1 1 1Z" />
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="heart" viewBox="0 0 24 24">
+            <path fill="currentColor"
+            d="M20.16 4.61A6.27 6.27 0 0 0 12 4a6.27 6.27 0 0 0-8.16 9.48l7.45 7.45a1 1 0 0 0 1.42 0l7.45-7.45a6.27 6.27 0 0 0 0-8.87Zm-1.41 7.46L12 18.81l-6.75-6.74a4.28 4.28 0 0 1 3-7.3a4.25 4.25 0 0 1 3 1.25a1 1 0 0 0 1.42 0a4.27 4.27 0 0 1 6 6.05Z" />
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="plus" viewBox="0 0 24 24">
+            <path fill="currentColor"
+            d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2Z" />
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="minus" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M19 11H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2Z" />
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="cart" viewBox="0 0 24 24">
+            <path fill="currentColor"
+            d="M8.5 19a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 8.5 19ZM19 16H7a1 1 0 0 1 0-2h8.491a3.013 3.013 0 0 0 2.885-2.176l1.585-5.55A1 1 0 0 0 19 5H6.74a3.007 3.007 0 0 0-2.82-2H3a1 1 0 0 0 0 2h.921a1.005 1.005 0 0 1 .962.725l.155.545v.005l1.641 5.742A3 3 0 0 0 7 18h12a1 1 0 0 0 0-2Zm-1.326-9l-1.22 4.274a1.005 1.005 0 0 1-.963.726H8.754l-.255-.892L7.326 7ZM16.5 19a1.5 1.5 0 1 0 1.5 1.5a1.5 1.5 0 0 0-1.5-1.5Z" />
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="check" viewBox="0 0 24 24">
+            <path fill="currentColor"
+            d="M18.71 7.21a1 1 0 0 0-1.42 0l-7.45 7.46l-3.13-3.14A1 1 0 1 0 5.29 13l3.84 3.84a1 1 0 0 0 1.42 0l8.16-8.16a1 1 0 0 0 0-1.47Z" />
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="trash" viewBox="0 0 24 24">
+            <path fill="currentColor"
+            d="M10 18a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1ZM20 6h-4V5a3 3 0 0 0-3-3h-2a3 3 0 0 0-3 3v1H4a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2ZM10 5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h-4Zm7 14a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V8h10Zm-3-1a1 1 0 0 0 1-1v-6a1 1 0 0 0-2 0v6a1 1 0 0 0 1 1Z" />
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="star-outline" viewBox="0 0 15 15">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+            d="M7.5 9.804L5.337 11l.413-2.533L4 6.674l2.418-.37L7.5 4l1.082 2.304l2.418.37l-1.75 1.793L9.663 11L7.5 9.804Z" />
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="star-solid" viewBox="0 0 15 15">
+            <path fill="currentColor"
+            d="M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z" />
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="search" viewBox="0 0 24 24">
+            <path fill="currentColor"
+            d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="user" viewBox="0 0 24 24">
+            <path fill="currentColor"
+            d="M15.71 12.71a6 6 0 1 0-7.42 0a10 10 0 0 0-6.22 8.18a1 1 0 0 0 2 .22a8 8 0 0 1 15.9 0a1 1 0 0 0 1 .89h.11a1 1 0 0 0 .88-1.1a10 10 0 0 0-6.25-8.19ZM12 12a4 4 0 1 1 4-4a4 4 0 0 1-4 4Z" />
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="close" viewBox="0 0 15 15">
+            <path fill="currentColor"
+            d="M7.953 3.788a.5.5 0 0 0-.906 0L6.08 5.85l-2.154.33a.5.5 0 0 0-.283.843l1.574 1.613l-.373 2.284a.5.5 0 0 0 .736.518l1.92-1.063l1.921 1.063a.5.5 0 0 0 .736-.519l-.373-2.283l1.574-1.613a.5.5 0 0 0-.283-.844L8.921 5.85l-.968-2.062Z" />
+        </symbol>
+
+        </defs>
+    </svg>
+
+    <div class="preloader-wrapper">
+        <div class="preloader">
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasCart" aria-labelledby="My Cart">
+        <div class="offcanvas-header justify-content-center">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+        <div class="order-md-last">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-primary">Giỏ Hàng Của Bạn</span>
+            <span class="badge bg-primary rounded-circle pt-2">3</span>
+            </h4>
+            <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                <h6 class="my-0">Áo hoodie màu xám cho pet</h6>
+                <small class="text-body-secondary">Mô tả ngắn gọn</small>
+                </div>
+                <span class="text-body-secondary">250.000VND</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                <h6 class="my-0">Đồ Ăn Cho chó</h6>
+                <small class="text-body-secondary">Mô tả ngắn gọn</small>
+                </div>
+                <span class="text-body-secondary">192.000VND</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                <h6 class="my-0">đồ chơi mềm</h6>
+                <small class="text-body-secondary">Mô tả ngắn gọn</small>
+                </div>
+                <span class="text-body-secondary">120.000VND</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+                <span class="fw-bold">Tổng tiền </span>
+                <strong>480.000VND</strong>
+            </li>
+            
+            </ul>
+
+            <button class="w-100 btn btn-primary btn-lg" type="submit">Tiếp tục thanh toán</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasSearch"
+        aria-labelledby="Search">
+        <div class="offcanvas-header justify-content-center">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+        <div class="order-md-last">
+            <h4 class="text-primary text-uppercase mb-3">
+            Tìm kiếm
+            </h4>
+            <div class="search-bar border rounded-2 border-dark-subtle">
+            <form id="search-form" class="text-center d-flex align-items-center" action="" method="">
+                <input type="text" class="form-control border-0 bg-transparent" placeholder="Search Here" />
+                <iconify-icon icon="tabler:search" class="fs-4 me-3"></iconify-icon>
+            </form>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container py-2">
+        <div class="row py-4 pb-0 pb-sm-4 align-items-center ">
+
+            <div class="col-sm-4 col-lg-3 text-center text-sm-start">
+            <div class="main-logo">
+                <a href="index.html">
+                <img src="images/logo.png" alt="logo" class="img-fluid"width="150px"header=100px>
+                </a>
+            </div>
+            </div>
+
+            <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-5 d-none d-lg-block">
+            <div class="search-bar border rounded-2 px-3 border-dark-subtle">
+                <form id="search-form" class="text-center d-flex align-items-center" action="" method="">
+                <input type="text" class="form-control border-0 bg-transparent"
+                    placeholder="Search for more than 10,000 products" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                    d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
+                </svg>
+                </form>
+            </div>
+            </div>
+
+            <div
+            class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
+            <div class="support-box text-end d-none d-xl-block">
+                <span class="fs-6 secondary-font text-muted">Điện thoại</span>
+                <h5 class="mb-0">056789999</h5>
+            </div>
+            <div class="support-box text-end d-none d-xl-block">
+                <span class="fs-6 secondary-font text-muted">Email</span>
+                <h5 class="mb-0">vonam32@gmail.com</h5>
+            </div>
+
+
+
+            </div>
+        </div>
+        </div>
+
+        <div class="container-fluid">
+        <hr class="m-0">
+        </div>
+
+        <div class="container">
+        <nav class="main-menu d-flex navbar navbar-expand-lg ">
+
+            <div class="d-flex d-lg-none align-items-end mt-3">
+            <ul class="d-flex justify-content-end list-unstyled m-0">
+                <li>
+                <a href="account.html" class="mx-3">
+                    <iconify-icon icon="healthicons:person" class="fs-4"></iconify-icon>
+                </a>
+                </li>
+                <li>
+                <a href="wishlist.html" class="mx-3">
+                    <iconify-icon icon="mdi:heart" class="fs-4"></iconify-icon>
+                </a>
+                </li>
+
+                <li>
+                <a href="#" class="mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+                    aria-controls="offcanvasCart">
+                    <iconify-icon icon="mdi:cart" class="fs-4 position-relative"></iconify-icon>
+                    <span class="position-absolute translate-middle badge rounded-circle bg-primary pt-2">
+                    03
+                    </span>
+                </a>
+                </li>
+
+                <li>
+                <a href="#" class="mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch"
+                    aria-controls="offcanvasSearch">
+                    <iconify-icon icon="tabler:search" class="fs-4"></iconify-icon>
+                    </span>
+                </a>
+                </li>
+            </ul>
+
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+            <div class="offcanvas-header justify-content-center">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body justify-content-between">
+                <select class="filter-categories border-0 mb-0 me-5">
+                <option>Mua Sắm Theo Danh Mục</option>
+                <option>Quần Áo</option>
+                <option>Phụ Kiện Cho Thú Cưng</option>
+                <option>Đồ Ăn</option>
+                <option>Đồ Chơi</option>
+                </select>
+
+                <ul class="navbar-nav menu-list list-unstyled d-flex gap-md-3 mb-0">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Trang Chủ</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown"
+                    aria-expanded="false">Pages</a>
+                    <ul class="dropdown-menu" aria-labelledby="pages">
+                    <li><a href="vechungtoi.html" class="dropdown-item">Về Chúng Tôi</a></li>
+                    <li><a href="index.html" class="dropdown-item">Danh Sách Yêu Thích</a></li>
+                    <li><a href="giohang.html" class="dropdown-item">Thanh Toán</a></li>
+                    <li><a href="lienhe.html" class="dropdown-item">Liên Hệ</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a href="lienhe.html" class="nav-link">Liên Hệ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Dathang.html" class="nav-link">Đặt Hàng</a>
+                </li>
+                </ul>
+
+            <div class="d-none d-lg-flex align-items-end">
+              <ul class="d-flex justify-content-end list-unstyled m-0">
+                <li>
+                  <a href="index.html" class="mx-3">
+                    <iconify-icon icon="healthicons:person" class="fs-4"></iconify-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="index.html" class="mx-3">
+                    <iconify-icon icon="mdi:heart" class="fs-4"></iconify-icon>
+                  </a>
+                </li>
+
+                <li class="">
+                  <a href="index.html" class="mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+                    aria-controls="offcanvasCart">
+                    <iconify-icon icon="mdi:cart" class="fs-4 position-relative"></iconify-icon>
+                    <span class="position-absolute translate-middle badge rounded-circle bg-primary pt-2">
+                      03
+                    </span>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </nav>
+    </div>
+  </header>
+  <h1>Giỏ Hàng Của Bạn</h1>
+<div id="product-list">
+  <div class="product" data-id="1" data-price="70000">
+    <img src="./images/item11.jpg" alt="Sản phẩm 1">
+    <h2>Bánh Cookie</h2>
+    <p>Giá: 70.000 VND</p>
+    <button class="add-to-cart">Thêm vào giỏ hàng</button>
+  </div>
+</div>
+
+<h2>Giỏ hàng</h2>
+<div id="cart">
+  <!-- Sản phẩm đã thêm vào giỏ sẽ hiển thị ở đây -->
+</div>
+
+<div id="total-price">Tổng tiền: 0 VND</div>
+<button id="checkout">Thanh toán</button>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const cart = document.getElementById('cart');
+    const products = document.querySelectorAll('.product');
+    const totalPriceElement = document.getElementById('total-price');
+    const checkoutButton = document.getElementById('checkout');
+    let totalPrice = 0;
+
+    // Hàm cập nhật tổng tiền
+    const updateTotalPrice = () => {
+      totalPriceElement.innerText = `Tổng tiền: ${totalPrice.toLocaleString()} VND`;
+    };
+
+    // Thêm sản phẩm vào giỏ hàng
+    products.forEach(product => {
+      product.querySelector('.add-to-cart').addEventListener('click', () => {
+        const productId = product.getAttribute('data-id');
+        const productName = product.querySelector('h2').innerText;
+        const productPrice = parseInt(product.getAttribute('data-price'), 10);
+
+        // Kiểm tra xem sản phẩm đã có trong giỏ hàng chưa
+        let cartItem = cart.querySelector(`.cart-item[data-id="${productId}"]`);
+
+        if (!cartItem) {
+          // Tạo mục sản phẩm trong giỏ hàng
+          cartItem = document.createElement('div');
+          cartItem.classList.add('cart-item');
+          cartItem.setAttribute('data-id', productId);
+          cartItem.innerHTML = `
+            <p>${productName} - ${productPrice.toLocaleString()} VND</p>
+            <div>
+              <button class="decrease-quantity">-</button>
+              <span class="quantity">1</span>
+              <button class="increase-quantity">+</button>
+              <button class="remove-from-cart">Xóa</button>
+            </div>
+          `;
+          cart.appendChild(cartItem);
+
+          // Xử lý sự kiện xóa sản phẩm
+          cartItem.querySelector('.remove-from-cart').addEventListener('click', () => {
+            const quantity = parseInt(cartItem.querySelector('.quantity').innerText, 10);
+            totalPrice -= productPrice * quantity;
+            cart.removeChild(cartItem);
+            updateTotalPrice();
+          });
+
+          // Xử lý tăng số lượng sản phẩm
+          cartItem.querySelector('.increase-quantity').addEventListener('click', () => {
+            let quantity = parseInt(cartItem.querySelector('.quantity').innerText, 10);
+            quantity++;
+            cartItem.querySelector('.quantity').innerText = quantity;
+            totalPrice += productPrice;
+            updateTotalPrice();
+          });
+
+          // Xử lý giảm số lượng sản phẩm
+          cartItem.querySelector('.decrease-quantity').addEventListener('click', () => {
+            let quantity = parseInt(cartItem.querySelector('.quantity').innerText, 10);
+            if (quantity > 1) {
+              quantity--;
+              cartItem.querySelector('.quantity').innerText = quantity;
+              totalPrice -= productPrice;
+              updateTotalPrice();
+            }
+          });
+        } else {
+          // Nếu sản phẩm đã có, tăng số lượng
+          let quantity = parseInt(cartItem.querySelector('.quantity').innerText, 10);
+          quantity++;
+          cartItem.querySelector('.quantity').innerText = quantity;
+          totalPrice += productPrice;
+          updateTotalPrice();
+        }
+      });
+    });
+
+    // Xử lý thanh toán
+    checkoutButton.addEventListener('click', () => {
+      alert('Thanh toán thành công!');
+      cart.innerHTML = ''; // Xóa giỏ hàng sau khi thanh toán
+      totalPrice = 0;
+      updateTotalPrice();
+      window.location.href = 'index.html'; // Quay lại trang chủ
+    });
+  });
+</script>
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+  <footer id="footer" class="my-5">
+    <div class="container py-5 my-5">
+      <div class="row">
+
+        <div class="col-md-3">
+          <div class="footer-menu">
+            <img src="images/logo.png" alt="logo"width="150px"header=120px>
+            <p class="blog-paragraph fs-6 mt-3">CÔNG TY CỔ PHẦN THUƠNG MẠI & DỊCH VỤ PetShop
+              116 Nguyễn Văn Thủ, Phường Đa Kao, Quận 1, Thành phố Hồ Chí Minh</p>
+            <div class="social-links">
+              <ul class="d-flex list-unstyled gap-2">
+                <li class="social">
+                  <a href="#">
+                    <iconify-icon class="social-icon" icon="ri:facebook-fill"></iconify-icon>
+                  </a>
+                </li>
+                <li class="social">
+                  <a href="#">
+                    <iconify-icon class="social-icon" icon="ri:twitter-fill"></iconify-icon>
+                  </a>
+                </li>
+                <li class="social">
+                  <a href="#">
+                    <iconify-icon class="social-icon" icon="ri:pinterest-fill"></iconify-icon>
+                  </a>
+                </li>
+                <li class="social">
+                  <a href="#">
+                    <iconify-icon class="social-icon" icon="ri:instagram-fill"></iconify-icon>
+                  </a>
+                </li>
+                <li class="social">
+                  <a href="#">
+                    <iconify-icon class="social-icon" icon="ri:youtube-fill"></iconify-icon>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer-menu">
+            <h3>Shop</h3>
+            <ul class="menu-list list-unstyled">
+              <li class="menu-item">
+                <a href="#" class="nav-link">Dành Cho Chó</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="nav-link">Dành Cho Mèo</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="nav-link">Thương Hiệu</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="nav-link">Blogs</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="nav-link">Bộ Sưu Tập</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer-menu">
+            <h3>Hỗ Trợ Khách Hàng</h5>
+              <ul class="menu-list list-unstyled">
+                <li class="menu-item">
+                  <a href="#" class="nav-link">Chính Sách Bảo Mật</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="nav-link">Chính Sách hoàn Tiền</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="nav-link">Chính Sách Đổi Trả Hàng</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="nav-link">Phương Thức Thanh Toán</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="nav-link">Phương Thức Vận Chuyển</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div>
+            <h3>Bản tin của chúng tôi</h3>
+            <p class="blog-paragraph fs-6">Đăng ký nhận bản tin của chúng tôi để nhận thông tin cập nhật về các ưu đãi lớn của chúng tôi.</p>
+            <div class="search-bar border rounded-pill border-dark-subtle px-2">
+              <form class="text-center d-flex align-items-center" action="" method="">
+                <input type="text" class="form-control border-0 bg-transparent" placeholder="Nhập email của bạn vào đây" />
+                <iconify-icon class="send-icon" icon="tabler:location-filled"></iconify-icon>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <div id="footer-bottom">
+    <div class="container">
+      <hr class="m-0">
+      <div class="row mt-3">
+        <div class="col-md-6 copyright">
+          <p class="secondary-font">The PetShop . Hân Hạnh Được Phục Vụ.</p>
+        </div>
+    </div>
+  </div>
+</body>
+
+</html> 
